@@ -31,13 +31,13 @@ public class MemberController {
 	}
 	
 	// 회원가입 post
-		@RequestMapping(value = "/register", method = RequestMethod.POST)
+		@RequestMapping(value = "/index", method = RequestMethod.POST)
 		public String postRegister(MemberVo vo) throws Exception {
 			logger.info("post register");
 			
 			memberService.reg(vo);
 			
-			return null;
+			return "redirect:/";
 		}
 	
 	

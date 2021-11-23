@@ -8,48 +8,48 @@ import javax.xml.crypto.Data;
 //MEMBER_ENROLL_DT          DATE          
 
 public class MemberVo {
-	private String memberID;
-	private String memberPWD;
-	private String memberNM;
-	private Data member_ENROLL_DT;
+	private String memberId;
+	private String memberPwd;
+	private String memberNm;
+	private Data memberEnrollDt;
+	
+	
+	public String getMemberId() {
+		return memberId;
+	}
+	public void setMemberId(String memberId) {
+		this.memberId = memberId;
+	}
+	public String getMemberPwd() {
+		return memberPwd;
+	}
+	public void setMemberPwd(String memberPwd) {
+		this.memberPwd = memberPwd;
+	}
+	public String getMemberNm() {
+		return memberNm;
+	}
+	public void setMemberNm(String memberNm) {
+		this.memberNm = memberNm;
+	}
+	public Data getMemberEnrollDt() {
+		return memberEnrollDt;
+	}
+	public void setMemberEnrollDt(Data memberEnrollDt) {
+		this.memberEnrollDt = memberEnrollDt;
+	}
+	public MemberVo(String memberId, String memberPwd, String memberNm, Data memberEnrollDt) {
+		super();
+		this.memberId = memberId;
+		this.memberPwd = memberPwd;
+		this.memberNm = memberNm;
+		this.memberEnrollDt = memberEnrollDt;
+	}
 	@Override
 	public String toString() {
-		return "MemberVo [memberID=" + memberID + ", memberPWD=" + memberPWD + ", memberNM=" + memberNM
-				+ ", member_ENROLL_DT=" + member_ENROLL_DT + "]";
+		return "MemberVo [memberId=" + memberId + ", memberPwd=" + memberPwd + ", memberNm=" + memberNm
+				+ ", memberEnrollDt=" + memberEnrollDt + "]";
 	}
-	public String getMemberID() {
-		return memberID;
-	}
-	public void setMemberID(String memberID) {
-		this.memberID = memberID;
-	}
-	public String getMemberPWD() {
-		return memberPWD;
-	}
-	public void setMemberPWD(String memberPWD) {
-		this.memberPWD = memberPWD;
-	}
-	public String getMemberNM() {
-		return memberNM;
-	}
-	public void setMemberNM(String memberNM) {
-		this.memberNM = memberNM;
-	}
-	public Data getMember_ENROLL_DT() {
-		return member_ENROLL_DT;
-	}
-	public void setMember_ENROLL_DT(Data member_ENROLL_DT) {
-		this.member_ENROLL_DT = member_ENROLL_DT;
-	}
-	public MemberVo(String memberID, String memberPWD, String memberNM, Data member_ENROLL_DT) {
-		super();
-		this.memberID = memberID;
-		this.memberPWD = memberPWD;
-		this.memberNM = memberNM;
-		this.member_ENROLL_DT = member_ENROLL_DT;
-	}
-	
-	
 	
 	
 

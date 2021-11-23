@@ -8,20 +8,20 @@
 	MEMBER_NM        NOT NULL VARCHAR2(15)  
 	MEMBER_ENROLL_DT          DATE       
  
-	 private String memberID;
-	 private String memberPWD;
-	 private String memberNM;
-	 private Data member_ENROLL_DT;
+	private String memberId;
+	private String memberPwd;
+	private String memberNm;
+	private Data memberEnrollDt;
  -->
  	<resultMap type="Member" id="memberResultSet">
- 		<result property="memberID" column="MEMBER_ID"/>
- 		<result property="memberPWD" column="MEMBER_PWD"/>
- 		<result property="memberNM" column="MEMBER_NM"/>
+ 		<result property="memberId" column="MEMBER_ID"/>
+ 		<result property="memberPwd" column="MEMBER_PWD"/>
+ 		<result property="memberNm" column="MEMBER_NM"/>
  	</resultMap>
  	
- 	<insert id="signUp" parameterType="Member">
+ 	<insert id="signUp">
   	insert into MEMBER(MEMBER_ID,MEMBER_PWD,MEMBER_NM)
-  	values(#{memberID},#{MEMBER_PWD},#{MEMBER_NM})
+  	values(#{memberId},#{memberPwd},#{memberNm})
  	</insert>
  	
 </mapper>
