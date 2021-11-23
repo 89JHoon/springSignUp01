@@ -2,11 +2,14 @@ package kh.com.test1121.member.vo;
 
 import javax.xml.crypto.Data;
 
+import org.springframework.stereotype.Component;
+
 //MEMBER_ID        NOT NULL VARCHAR2(30)  
 //MEMBER_PWD       NOT NULL VARCHAR2(100) 
 //MEMBER_NM        NOT NULL VARCHAR2(15)  
 //MEMBER_ENROLL_DT          DATE          
 
+@Component
 public class MemberVo {
 	private String memberId;
 	private String memberPwd;

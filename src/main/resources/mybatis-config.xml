@@ -4,17 +4,20 @@
 
 <configuration>
 
-<settings>
+	<settings>
 
-<setting name="jdbcTypeForNull" value="NULL"/>
+	<setting name="jdbcTypeForNull" value="NULL"/>
 
-</settings>
+	</settings>
 
-<typeAliases>
-<typeAlias type="kh.com.test1121.member.vo.MemverVo" alias="Member"> </typeAlias>
-</typeAliases>
+	<typeAliases>
+		<typeAlias type="kh.com.test1121.member.vo.MemverVo" alias="MemverVo"/> 
+	</typeAliases>
 
-<mappers>
-<mapper resource="mapper/member-mapper.xml"></mapper>
-</mappers>
+<!-- 
+	<mappers>
+		<mapper resource="mapper/member-mapper.xml"></mapper>
+	</mappers>
+ -->
+
 </configuration>
