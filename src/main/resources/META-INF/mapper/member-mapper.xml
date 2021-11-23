@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper>
+  <cache-ref namespace="Member"/>
+<!-- 
+	MEMBER_ID        NOT NULL VARCHAR2(30)  
+	MEMBER_PWD       NOT NULL VARCHAR2(100) 
+	MEMBER_NM        NOT NULL VARCHAR2(15)  
+	MEMBER_ENROLL_DT          DATE       
+ 
+	 private String memberID;
+	 private String memberPWD;
+	 private String memberNM;
+	 private Data member_ENROLL_DT;
+ -->
+ 	<resultMap type="Member" id="memberResultSet">
+ 		<result property="memberID" column="MEMBER_ID"/>
+ 		<result property="memberPWD" column="MEMBER_PWD"/>
+ 		<result property="memberNM" column="MEMBER_NM"/>
+ 	</resultMap>
+ 	
+ 	<insert id="signUp" parameterType="Member">
+  	insert into MEMBER(MEMBER_ID,MEMBER_PWD,MEMBER_NM)
+  	values(#{memberID},#{MEMBER_PWD},#{MEMBER_NM})
+ 	</insert>
+ 	
+</mapper>
